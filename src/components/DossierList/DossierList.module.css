@@ -1,0 +1,248 @@
+
+.dossiers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  background-color: #F5F8FF;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.locataire-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.locataire-name-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between; 
+}
+
+/*.garant-section {
+  padding-right: 20%;
+}*/
+
+.dossier-card {
+  border: 1px solid #ddd;
+  width: 100%;
+  padding: 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.section-title {
+  font-size: 0.9rem; 
+  margin-bottom: 10px;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.icon-color {
+  margin-right: 5px;
+  color: #1F4B92;
+}
+
+.optimized {
+  font-size: 0.85rem;
+}
+
+.statut-label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.statut-complet {
+  color: green;
+  display: flex;
+  align-items: center;
+}
+
+.statut-incomplet {
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: "small";
+}
+
+.demande-date {
+  display: flex;
+  align-items: center;
+  font-style: italic;
+  width: 50%;
+}
+
+
+
+.badge {
+  width: 60px; 
+  height: 60px;
+  background-color: #58d68d;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+  position: relative;
+  right: 0;
+}
+
+.badge.hidden {
+  visibility: hidden;
+}
+
+.badge-text {
+  position: relative;
+  z-index: 2; 
+}
+
+.badge-icon {
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  z-index: 1; 
+  opacity: 0.6; 
+}
+
+@media (max-width: 768px) {
+  .dossiers-list {
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .dossier-card {
+    width: 100%;
+  }
+
+  .header {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .locataire-name-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .info-section {
+    flex-direction: column; 
+  }
+
+  .garant-section {
+    padding-right: 0; 
+  }
+
+  .section-title {
+    font-size: 1rem; 
+  }
+
+  .optimized {
+    font-size: 0.9rem; 
+  }
+
+  .badge {
+    width: 50px;
+    height: 50px;
+    font-size: 0.8rem;
+  }
+
+  .badge-icon {
+    font-size: 1.2rem;
+  }
+
+  .statut-label {
+    font-size: 1rem;
+  }
+
+  .demande-date {
+    width: 100%;
+    justify-content: flex-start; 
+  }
+
+  .icon-text {
+    margin-bottom: 6px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .dossiers-list {
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .dossier-card {
+    width: 95%;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .locataire-name-container {
+    flex-direction: column;
+  }
+
+  .info-section {
+    flex-direction: column;
+  }
+
+  .section-title {
+    font-size: 0.9rem;
+  }
+
+  .optimized {
+    font-size: 0.85rem;
+  }
+
+  .badge {
+    width: 40px;
+    height: 40px;
+    font-size: 0.7rem;
+  }
+
+  .badge-icon {
+    font-size: 1rem;
+  }
+
+  .statut-label {
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
+
+
