@@ -96,7 +96,7 @@ const DossiersList: React.FC = () => {
               {dossier.locataire.name}
              </Typography>
           <div className={`${style["badge"]} ${dossier.locataire.isFiable ? "" : style["hidden"]}`} >
-            <CheckCircleIcon className={style["badge-icon"]} />
+            <span className={style["badge-icon"]}>V</span>
             <span className={style["badge-text"]}>100% Fiable</span>
          </div>
          </div>
