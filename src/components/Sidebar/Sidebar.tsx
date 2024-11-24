@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import style from "./Sidebar.module.css";
 import {
@@ -19,7 +20,7 @@ const Sidebar: React.FC<SidebarProps> = ({ onMenuClick }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false); 
 
   const handleItemClick = (item: string): void => {
-    console.log("Mon item reçu:", item);
+    console.log("Mon élément reçu:", item);
     setActiveItem(item);
     onMenuClick(item); 
   };
@@ -30,12 +31,9 @@ const Sidebar: React.FC<SidebarProps> = ({ onMenuClick }) => {
 
   return (
     <>
-      {/* Bouton pour les écrans mobiles */}
       <button className={style["toggle-button"]} onClick={toggleSidebar}>
         {isSidebarOpen ? <CloseIcon /> : <MenuIcon />}
       </button>
-
-      {/* Barre latérale */}
       <aside
         className={`${style.sidebar} ${isSidebarOpen ? style.open : style.closed}`}
       >
